@@ -1,0 +1,18 @@
+[package]
+name = "dcl"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "2dcl"
+path = "src/main.rs"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+tokio-tungstenite = { version = "*", features = ["native-tls"] }
+futures-util = { version = "0.3", default-features = false, features = ["sink", "std"] }
+log = "0.4"
+bevy = "0.7.0"
+dcl-common = { path = "../common" }
+dcl-protocol = { path = "../protocol" }
+protobuf = { version = "3.1.0", features = ["with-bytes"] }

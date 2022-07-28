@@ -1,0 +1,10 @@
+[package]
+name = "dcl-kernel"
+version = "0.0.0"
+edition = "2021"
+
+[dependencies]
+wry = "0.19.0"
+
+[build-dependencies]
+protobuf-codegen = "3.1.0"

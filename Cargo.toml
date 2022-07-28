@@ -1,6 +1,10 @@
 [workspace]
 resolver = "2"
+
 members = [
-  "dcl-common",
+  "common",
   "catalyst",
+  "2dcl",
+  "kernel",
+  "protocol"
 ]
